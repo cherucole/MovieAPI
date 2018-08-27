@@ -1,3 +1,4 @@
+{% import 'macros.html' as macro%}
 <h1>Hello World</h1>
 
 <!DOCTYPE html>
@@ -10,8 +11,21 @@
         <title> Welcome to the best Movie Review website </title>
         {% endif %}
     </head>
-    <body>
-<h1>{{message12}}</h1>
-    <h2>{{funny}}</h2>
+ <body>
+        <!-- Popular movie -->
+        <h3> Popular Movies</h3>
+        <ul>
+            {{ macro.displayMovieList(popular)}}
+        </ul>
+        <!-- Upcoming movie  -->
+        <h3> Upcoming Movies </h3>
+        <ul>
+            {{ macro.displayMovieList(upcoming)}}
+        </ul>
+        <!-- Now showing movie -->
+        <h3>Now Showing</h3>
+        <ul>
+            {{ macro.displayMovieList(now_showing)}}
+        </ul>
     </body>
 </html>
