@@ -55,10 +55,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-491">
+            <state relative-caret-position="773">
               <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="65" selection-end-column="70" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
@@ -79,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/movie.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
@@ -449,19 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-491">
-          <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="65" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-            <marker date="1535462082541" expanded="true" signature="302:309" ph="..." />
-            <marker date="1535462082541" expanded="true" signature="1284:1291" ph="..." />
-            <marker date="1535462082541" expanded="true" signature="1492:1497" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/macros.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -473,6 +460,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="65" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <marker date="1535462082541" expanded="true" signature="302:309" ph="..." />
+            <marker date="1535462082541" expanded="true" signature="1284:1291" ph="..." />
+            <marker date="1535462082541" expanded="true" signature="1492:1497" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
