@@ -3,25 +3,6 @@ from . import main
 from ..request import get_movies,get_movie,search_movie
 from .forms import ReviewForm
 from ..models import Review
-# from flask import render_template,request,redirect,url_for
-# from app import app
-# from app.request import get_movies,get_movie,search_movie
-# from app.models import review
-# from app.main.forms import ReviewForm
-# Review = review.Review
-# from .requests import get_movies,get_movie
-
-
-# #views
-# @app.route('/')
-# def index():
-#     '''
-#     view root page function that returns the index page and its data
-#     :return:
-#     '''
-#     message="Hello World Again Dynamic"
-#     funnymessage='this is a funny message test'
-#     return render_template('index.html', message12=message, funny=funnymessage)
 
 @main.route('/')
 def index():
@@ -42,14 +23,6 @@ def index():
         return redirect(url_for('main.search', movie_name=search_movie))
     else:
         return render_template('index.html', title=title, popular=popular_movies, upcoming=upcoming_movie, now_showing=now_showing_movie)
-# @app.route('/movie/<int:movie_id>')
-# def movie(movie_id):
-#     '''
-#     view movie page function that returns the movie details page and its data
-#     :param movie_id:
-#     :return:
-#     '''
-#     return render_template('movie.html', id=movie_id)
 
 def index():
     '''
@@ -59,16 +32,6 @@ def index():
     myTitle='Home- Welcome to the best movie review site Online'
     return render_template('index.html', title=myTitle)
 
-# @app.route('/movie/<int:id>')
-# def movie(id):
-#
-#     '''
-#     View movie page function that returns the movie details page and its data
-#     '''
-#     movie = get_movie(id)
-#     title = f'{movie.title}'
-#
-#     return render_template('movie.html',title = title,movie = movie)
 
 @main.route('/search/<movie_name>')
 def search(movie_name):

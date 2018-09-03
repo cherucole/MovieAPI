@@ -12,12 +12,6 @@ def configure_request(app):
     api_key = app.config['MOVIE_API_KEY']
     base_url = app.config['MOVIE_API_BASE_URL']
 
-# Movie = movie.Movie
-#getting the api key
-# api_key=app.config['MOVIE_API_KEY']
-
-#getting the base url
-# base_url = app.config["MOVIE_API_BASE_URL"]
 
 def get_movies(category):
     '''
@@ -95,4 +89,3 @@ def search_movie(movie_name):
 
 
     return search_movie_results
-
