@@ -1,9 +1,6 @@
 #added after changing folder structure
 import os
 
-
-
-
 class Config:
     '''
     General configuration parent class
@@ -21,7 +18,7 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-
+    SENDER_EMAIL = 'fantasystudios94@gmail.com'
 
 
 class ProdConfig(Config):

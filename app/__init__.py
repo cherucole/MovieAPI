@@ -8,7 +8,7 @@ from flask_mail import Mail
 
 
 photos = UploadSet('photos',IMAGES)
-mail=Mail()
+mail = Mail()
 
 
 login_manager = LoginManager()
