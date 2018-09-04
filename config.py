@@ -21,6 +21,10 @@ class Config:
     SENDER_EMAIL = 'fantasystudios94@gmail.com'
 
 
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://cherucole:cherucole@localhost/watchlist_test'
+
+
 class ProdConfig(Config):
     '''
     production configuration child class
@@ -30,15 +34,13 @@ class ProdConfig(Config):
     pass
 
 class DevConfig(Config):
-    '''
-    Dev't configuration child class
-    Args:
-        Config: The parent configuration class with general configuration settings
-    '''
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://cherucole:cherucole@localhost/watchlist'
+
     DEBUG= True
 
 #added after changing folder structure
 config_options = {
 'development':DevConfig,
-'production':ProdConfig
+'production':ProdConfig,
+'test':TestConfig
 }
