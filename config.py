@@ -9,7 +9,7 @@ class Config:
     #added after changing folder structure
     MOVIE_API_KEY = os.environ.get('MOVIE_API_KEY')
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://cherucole:cherucole@localhost/watchlist'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://cherucole:cherucole@localhost/watchlist'
 
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     #  email configurations
@@ -36,7 +36,6 @@ class TestConfig(Config):
 #     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    # pass
 
 class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://cherucole:cherucole@localhost/watchlist'
